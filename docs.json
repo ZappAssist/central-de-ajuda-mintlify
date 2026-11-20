@@ -41,10 +41,15 @@
         "pages": [
           "canais-disponiveis",
           "whats-app-via-qr-code",
-          "whats-app-oficial-api-oficial-waba",
-          "como-criar-templates-api-oficial",
-          "como-enviar-templates",
-          "api-oficial-do-whats-app-faq-completo"
+          {
+            "group": "API Oficial do WhatsApp",
+            "pages": [
+              "api-oficial-do-whats-app-faq-completo",
+              "whats-app-oficial-api-oficial-waba",
+              "como-criar-templates-api-oficial",
+              "como-enviar-templates"
+            ]
+          }
         ]
       }
     ],
