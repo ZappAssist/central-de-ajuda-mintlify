@@ -35,6 +35,12 @@
         "pages": [
           "changelog-e-atualizacoes"
         ]
+      },
+      {
+        "group": "Canais Disponíveis",
+        "pages": [
+          "canais-disponiveis"
+        ]
       }
     ],
     "global": {
