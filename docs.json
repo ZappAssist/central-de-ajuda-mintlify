@@ -17,7 +17,8 @@
         "group": "INICIO",
         "pages": [
           "introducao",
-          "principais-recursos-do-sistema"
+          "principais-recursos-do-sistema",
+          "primeiros-passos-configuracao-inicial"
         ]
       }
     ],
