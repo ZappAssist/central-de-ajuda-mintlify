@@ -14,9 +14,10 @@
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "INICIO",
         "pages": [
-          "introducao"
+          "introducao",
+          "principais-recursos-do-sistema"
         ]
       }
     ],
