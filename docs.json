@@ -39,7 +39,12 @@
       {
         "group": "Canais Disponíveis",
         "pages": [
-          "canais-disponiveis"
+          "canais-disponiveis",
+          "whats-app-via-qr-code",
+          "whats-app-oficial-api-oficial-waba",
+          "como-criar-templates-api-oficial",
+          "como-enviar-templates",
+          "api-oficial-do-whats-app-faq-completo"
         ]
       }
     ],

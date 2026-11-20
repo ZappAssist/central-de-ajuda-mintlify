@@ -1,0 +1,154 @@
+---
+title: "API Oficial do WhatsApp — FAQ Completo"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-20T18:19:47.499Z"
+description: "Perguntas frequentes sobre requisitos, cobranças da Meta, templates, limitações e boas práticas da API Oficial na ZappAssist."
+---
+
+Tire todas as suas dúvidas sobre o funcionamento da **API Oficial do WhatsApp (WABA)**, requisitos da Meta, regras de cobrança, templates aprovados e recursos disponíveis na **ZappAssist**.
+
+---
+
+## 🔍 Visão Geral
+
+### O que é a API Oficial do WhatsApp?
+
+A **API Oficial do WhatsApp Business Platform** é a solução empresarial homologada pela **Meta** para atendimento multiagente, automação, integrações e envio de mensagens em escala com alta estabilidade e segurança.
+
+---
+
+## ✅ Requisitos para Utilizar a API Oficial
+
+### Quais são os requisitos obrigatórios?
+
+Para ativar a API Oficial, a sua empresa precisa possuir:
+
+- Conta ativa no Facebook;
+- **Gerenciador de Negócios (Business Manager)** configurado;
+- **Portfólio Empresarial (Business Portfolio)**;
+- Conta do **WhatsApp Business**;
+- **Verificação da Empresa na Meta** (quando exigida para expansão de limites e recursos).
+
+### Preciso ter um Business Manager e um Portfólio Empresarial?
+
+Sim. Toda conta da API Oficial precisa estar vinculada a um **Business Manager** e organizada dentro de um **Portfólio Empresarial** da Meta, que centraliza seus números, páginas, aplicativos e formas de pagamento.
+
+### Minha empresa precisa estar verificada?
+
+Na maioria dos casos, sim. Sem a verificação empresarial concluída, a Meta pode limitar recursos avançados e o volume diário de envios da conta.
+
+### Como verificar se minha empresa já foi aprovada pela Meta?
+
+Você pode acompanhar o status diretamente nos painéis oficiais da Meta:
+
+- **Configurações do Negócio (Informações da Empresa):** [business.facebook.com/settings/info](https://business.facebook.com/settings/info)
+- **Gerenciador do WhatsApp (WhatsApp Manager):** [business.facebook.com/wa/manage/home](https://business.facebook.com/wa/manage/home)
+
+Nessas páginas você consulta o status da verificação, documentos enviados, eventuais pendências e aprovações.
+
+---
+
+## 💳 Cobranças da Meta
+
+### A assinatura da ZappAssist já inclui as cobranças da Meta?
+
+**Não.** Os valores cobrados pelo tráfego de mensagens na API Oficial são faturados **diretamente pela Meta** no cartão de crédito cadastrado no seu Gerenciador de Negócios, não estando incluídos na assinatura da **ZappAssist**.
+
+### Quem define os preços das conversas e mensagens?
+
+A própria **Meta**. As tarifas variam conforme:
+
+- País de destino do contato;
+- Categoria da mensagem (_Marketing_, _Utilidade_, _Autenticação_ ou _Serviço_);
+- Tipo de mensagem enviada (_Template_ ou resposta dentro da janela de atendimento).
+
+Os preços oficiais atualizados podem ser consultados diretamente na documentação da Meta:
+
+- **Tabela oficial de preços:** [developers.facebook.com/documentation/business-messaging/whatsapp/pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/)
+
+<Warning>
+  **Atenção às regras de cobrança da Meta:** desde outubro de 2026, a Meta aplica cobrança por mensagem enviada também para mensagens de **serviço** e **utilidade** dentro da janela de 24 horas (além dos templates). Para reduzir o consumo de mensagens oficiais sem trocar de canal, utilize os recursos nativos da **ZappAssist**:
+
+  - **Franquia mensal gratuita:** acompanhamento das mensagens gratuitas concedidas mensalmente pela Meta ao número conectado;
+  - **Concatenador de Mensagens:** agrupa frases enviadas em sequência pelo atendente em um único envio;
+  - **Chat Externo por Link:** permite continuar a conversa com o cliente por uma interface web semelhante ao WhatsApp sem gerar custos adicionais de mensageria oficial.
+</Warning>
+
+### A janela gratuita de 72 horas (Click to WhatsApp Ads) continua válida?
+
+**Sim.** Mensagens enviadas dentro da janela gratuita de **72 horas** originadas por anúncios _Click-to-WhatsApp_ (Facebook/Instagram Ads) ou botões de chamada para ação na página permanecem isentas de cobrança de entrega pela Meta.
+
+---
+
+## 📝 Templates (Mensagens Modelo)
+
+### O que são Templates e quando devo usá-los?
+
+**Templates** são modelos de mensagens pré-aprovados pela Meta, obrigatórios para iniciar uma conversa ativa com o cliente ou retomar o contato após o encerramento da janela de 24 horas (ex.: cobranças, confirmações, agendamentos, lembretes e campanhas).
+
+### Quem aprova os Templates e quanto tempo demora?
+
+A análise e aprovação são feitas **exclusivamente pela Meta** (a **ZappAssist** apenas envia a solicitação e sincroniza o status). A aprovação costuma levar de alguns minutos até poucas horas, podendo haver reprovação caso o texto viole as políticas comerciais da Meta.
+
+---
+
+## ⚙️ Limitações e Recursos da API Oficial
+
+### A API Oficial funciona com grupos do WhatsApp?
+
+**Não pela plataforma.** A API Oficial da Meta não disponibiliza leitura, envio ou automação de mensagens em grupos. Caso o número esteja configurado no **Modo Coexistência (COEX)**, você continuará visualizando e respondendo grupos normalmente pelo aplicativo **WhatsApp Business no celular**.
+
+### Posso usar o WhatsApp no celular junto com a API Oficial?
+
+**Sim**, desde que o número esteja conectado no **Modo Coexistência (COEX)** — disponível nas modalidades compatíveis da **ZappAssist**. Nesse modo, o mesmo número opera simultaneamente no aplicativo WhatsApp Business do celular e no painel multiatendente.
+
+### Posso fazer ligações de voz e vídeo?
+
+- **No Modo Coexistência (COEX):** as chamadas de voz e vídeo continuam funcionando normalmente pelo aplicativo WhatsApp Business no celular.
+- **Via API Nuvem:** suporta chamadas de voz nas modalidades habilitadas pela Meta.
+
+### Posso migrar um número já existente para a API Oficial?
+
+**Sim.** É possível migrar um número já em uso no WhatsApp para a API Oficial, escolhendo operar exclusivamente via API ou em **Modo Coexistência (COEX)** para manter o acesso pelo celular.
+
+---
+
+## 📈 Qualidade e Limites da Conta
+
+### Existe limite de envio de mensagens?
+
+**Sim.** A Meta estabelece limites diários de envio por níveis (_tiers_). Conforme o número mantém boa qualidade e baixo índice de bloqueios, a Meta aumenta automaticamente o limite diário.
+
+### O que reduz a qualidade do número ou causa bloqueios?
+
+- Alto índice de bloqueios ou denúncias de SPAM pelos destinatários;
+- Envios em massa para contatos que não autorizaram o recebimento (_opt-in_);
+- Violação das políticas comerciais do WhatsApp.
+
+---
+
+## ❓ Outras Dúvidas Frequentes
+
+### A ZappAssist aprova empresas ou Templates?
+
+**Não.** A verificação de empresas, contas comerciais e aprovação de templates são realizadas exclusivamente pela Meta.
+
+### Posso usar múltiplos atendentes e integrar com outros sistemas?
+
+**Sim.** A API Oficial foi projetada para operação simultânea com toda a sua equipe na **ZappAssist**, além de suportar integrações completas via **API REST**, **Webhooks**, **Typebot**, **n8n** e **CRMs/ERPs**.
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Precisa de ajuda para ativar seu número na API Oficial ou configurar os recursos de economia de mensagens? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis

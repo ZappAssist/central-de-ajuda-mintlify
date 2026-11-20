@@ -1,0 +1,129 @@
+---
+title: "Como Criar Templates (API Oficial)"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-20T18:16:40.391Z"
+description: "Aprenda a criar, submeter para aprovação na Meta e sincronizar templates de mensagens na ZappAssist."
+---
+
+Os **templates do WhatsApp** (também chamados de _Mensagens Modelo_ ou _HSM_) são mensagens **pré-aprovadas pela Meta**.
+
+Eles são obrigatórios sempre que a sua empresa precisar:
+
+- **Iniciar uma conversa ativa** com o cliente (quando não há janela de 24h aberta);
+- **Retomar um atendimento** após o encerramento da janela de 24 horas;
+- **Enviar campanhas** pela API Oficial do WhatsApp.
+
+Na **ZappAssist**, você pode trabalhar com templates de duas maneiras:
+
+1. Criando **templates simples diretamente dentro da ZappAssist** (quando conectado via API Oficial Direta);
+2. Criando e gerenciando modelos completos diretamente no **Gerenciador de Negócios da Meta (Meta Business Suite)**.
+
+<Note>
+  🎥 **[INSERIR VÍDEO DO YOUTUBE - CRIAÇÃO E APROVAÇÃO DE TEMPLATES]**<br />_Sugestão de aula:_ "Como Criar e Aprovar Templates do WhatsApp Oficial na ZappAssist"<br />_Cole aqui o link ou embed do YouTube:_ `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
+</Note>
+
+---
+
+## 🛠️ Opção 1: Criar Templates Simples Diretamente na ZappAssist
+
+Quando o seu número oficial estiver conectado diretamente à **ZappAssist** (conexão direta Meta), você pode criar modelos simples sem sair da plataforma:
+
+1. No menu lateral, acesse **Configurações** (ou **Canais**);
+2. Clique em **Canais / API**;
+3. Acesse a aba **Templates**.
+
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Tela de gerenciamento de Templates dentro da ZappAssist mostrando os botões de criar, editar e listar modelos.
+
+Nesta área, você consegue:
+
+- Criar novos templates de texto simples;
+- Editar modelos existentes;
+- Visualizar o status de aprovação dos templates utilizados nas campanhas e atendimentos.
+
+---
+
+## 🌐 Opção 2: Criar Templates Completos pelo Painel da Meta
+
+Para criar templates com **imagens, documentos, cabeçalhos, botões de resposta rápida ou links**, utilize o Gerenciador oficial da Meta:
+
+### 1. Acesse o Gerenciador de Templates do WhatsApp
+
+Entre no painel oficial da Meta pelo link abaixo:<br />👉 [Gerenciador de Modelos do WhatsApp (Meta Business)](https://business.facebook.com/latest/whatsapp_manager/message_templates)
+
+### 2. Escolha a Conta Empresarial (Business Manager)
+
+Caso você administre mais de uma empresa no gerenciador, selecione no topo da tela a **Business Manager (BM)** onde o seu número de WhatsApp Oficial está vinculado.
+
+### 3. Clique em “Criar Modelo”
+
+Nesta primeira tela, preencha as informações básicas:
+
+- **Categoria:** escolha entre _Marketing_, _Utilidade_ (avisos, confirmações, boletos) ou _Autenticação_ (códigos de verificação);
+- **Nome do template:** utilize apenas letras minúsculas, números e sublinhado (`_`), sem espaços ou acentos (ex.: `boas_vindas_cliente`);
+- **Idioma:** selecione **Português (BR)**.
+
+Depois, clique em **“Continuar”**.
+
+### 4. Configure o Conteúdo do Template
+
+#### 🖼️ Cabeçalho (Opcional)
+
+- Você pode deixar sem cabeçalho ou adicionar um título em texto, **Imagem**, **Vídeo** ou **Documento (PDF)** que aparecerá no topo da mensagem.
+
+#### 📝 Corpo da Mensagem
+
+- Escreva o texto principal que será enviado ao cliente.
+- Você pode inserir **variáveis numéricas** (`{{1}}`, `{{2}}`, `{{3}}`) para personalizar os dados dinamicamente no momento do disparo:
+  - `{{1}}` → Nome do cliente
+  - `{{2}}` → Nome do atendente ou número do protocolo
+
+<Warning>
+  **Atenção:** ao criar variáveis no painel da Meta, selecione sempre **Tipo de variável: Número** (`{{1}}`, `{{2}}`), garantindo total compatibilidade com a **ZappAssist**.
+</Warning>
+
+#### 🔻 Rodapé (Opcional)
+
+- Insira uma frase curta em destaque cinza abaixo da mensagem (ex.: _"Responda SAIR para não receber mais avisos"_).
+
+#### 🔘 Botões (Opcional)
+
+- Adicione botões interativos de **Resposta Rápida** (até 3 botões) ou **Chamada para Ação** (link para site ou botão de ligar).
+
+### 5. Pré-visualize e Envie para Análise
+
+- Confira a pré-visualização da mensagem à direita da tela;
+- Clique em **“Enviar”** e confirme a solicitação.
+
+### 6. Aguarde a Aprovação da Meta
+
+A análise da Meta costuma levar de alguns minutos até poucas horas. Assim que o status mudar de _Em análise_ para **“Ativo” (verde)**, o modelo estará liberado para uso.
+
+---
+
+## 🔄 Como Sincronizar os Templates na ZappAssist
+
+Sempre que um novo template for aprovado na Meta, faça a sincronização para que ele apareça no seu painel:
+
+1. Na **ZappAssist**, acesse o menu **Canais**;
+2. Localize o seu canal do **WhatsApp Oficial** e clique em editar/opções;
+3. Clique no botão **“Sincronizar Templates”**.
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Botão "Sincronizar Templates" nas opções do canal WhatsApp Oficial dentro da ZappAssist.
+
+Pronto! Todos os templates com status **Ativo** ficarão imediatamente disponíveis na tela de atendimento e no módulo de campanhas.
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Precisa de ajuda para criar ou sincronizar seus templates da API Oficial? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis
