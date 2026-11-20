@@ -1,0 +1,168 @@
+---
+title: "Glossário de Termos"
+description: "Dicionário simples e direto dos termos utilizados na plataforma ZappAssist."
+---
+
+<Info>
+  Este glossário explica os termos mais usados na documentação de forma simples e direta. Caso encontre alguma palavra nova enquanto navega pelo sistema, consulte esta lista rápida.
+</Info>
+
+---
+
+## 📲 Canais e Conexões
+
+### Canal
+
+A "porta de entrada" das mensagens: um número de WhatsApp, uma página do Instagram, um perfil do Facebook, um bot do Telegram, um e-mail ou o WebChat do seu site. Os canais **recebem e enviam as mensagens** — quem organiza os atendimentos são as filas.
+
+### Ticket
+
+Cada conversa de atendimento. Quando um cliente envia uma mensagem, o sistema cria (ou reabre) um ticket para aquela conversa. O ticket guarda todo o histórico, a fila, o atendente responsável e o status (_Aberto_, _Aguardando_ ou _Fechado_).
+
+### Fila
+
+Um "departamento" ou "setor" dentro do sistema (ex.: _Vendas_, _Suporte_, _Financeiro_). As filas determinam **quem pode ver e responder** cada conversa.
+
+### API
+
+Sigla para _Interface de Programação de Aplicativos_. Na prática, é um **endereço (URL) que permite que dois sistemas conversem entre si**. Na **ZappAssist**, as APIs são usadas para conectar canais e trocar informações com outros softwares.
+
+### API Oficial (WhatsApp)
+
+Conexão do WhatsApp feita diretamente pela **Meta** (empresa dona do WhatsApp). É a forma homologada oficialmente para grandes volumes, mas possui custos por conversa cobrados pela própria Meta e regras específicas (como envio de templates e janela de 24 horas).
+
+### WhatsApp Padrão e WhatsApp Plus
+
+Conexões rápidas de WhatsApp via leitura de QR Code, sem custo por mensagem enviada. O **WhatsApp Plus** conta com suporte adicional para envio de botões interativos e listas de opções.
+
+### WABA
+
+Sigla de _WhatsApp Business Account_ — a conta comercial oficial criada dentro do Gerenciador de Negócios da Meta, necessária para ativar a API Oficial.
+
+### Token
+
+Uma **"chave digital"** única que identifica e autoriza uma conexão (canal, integração ou API). Funciona como uma senha: deve ser mantida em segredo e nunca compartilhada publicamente.
+
+### QR Code
+
+Código quadrado que o aplicativo do WhatsApp no celular escaneia para conectar o número à **ZappAssist**.
+
+### HUB de Conexões
+
+Serviço homologado que faz a ponte segura entre suas redes sociais (**Instagram Direct**, **Facebook Messenger** e **TikTok**) e o painel da **ZappAssist**.
+
+### COEX (Coexistência)
+
+Modo da API Oficial em que o **WhatsApp continua funcionando no celular** ao mesmo tempo em que é atendido pelo painel do sistema.
+
+### Direct
+
+A **conversa privada** do Instagram (o chat direto da rede social).
+
+### Comentário e Publicação
+
+**Comentário** é o texto público que alguém escreve em uma postagem. **Publicação** é o conteúdo postado no perfil — no Instagram pode ser **Feed**, **Stories** ou **Reels**. A **ZappAssist** permite responder comentários e agendar publicações diretamente pela plataforma.
+
+### Template (Mensagem Modelo)
+
+Mensagem **pré-aprovada pela Meta** usada na API Oficial do WhatsApp para iniciar conversas ativas ou enviar notificações fora da janela de atendimento.
+
+### Janela de 24 horas
+
+Regra das redes sociais (Instagram, Facebook, TikTok e API Oficial do WhatsApp): após a última mensagem enviada pelo cliente, a sua empresa tem até **24 horas** para responder livremente pelo painel.
+
+---
+
+## ☎️ Telefonia
+
+### Ramal
+
+Um "número interno" de telefone (ex.: `2001`, `2002`) atribuído a cada atendente. Cada ramal atende **uma ligação por vez**.
+
+### SIP
+
+O protocolo de comunicação usado pelos sistemas de telefonia pela internet (VoIP). Permite integrar a **ZappAssist** com centrais telefônicas ou provedores de voz.
+
+### WebRTC
+
+Tecnologia que permite **fazer e receber ligações direto pelo navegador**, usando apenas um headset, sem precisar instalar programas extras no computador.
+
+### PABX / Central Telefônica
+
+O sistema que gerencia e **distribui as ligações telefônicas entre os ramais** da empresa.
+
+---
+
+## 👥 Equipe e Organização
+
+### Usuário (Atendente)
+
+Cada colaborador cadastrado na **ZappAssist** para realizar atendimentos. O usuário enxerga apenas as conversas das filas às quais tem permissão de acesso.
+
+### Perfil (Papel de Acesso)
+
+O nível de permissão de cada colaborador no sistema:
+
+- **Administrador:** acesso completo ao sistema, relatórios, canais e configurações;
+- **Supervisor:** gerencia equipes, filas, campanhas e usuários;
+- **Supervisor de Fila:** acompanha e gerencia apenas os atendimentos dos setores aos quais pertence;
+- **Usuário (Atendente):** perfil padrão para responder conversas nas filas liberadas para ele.
+
+### Carteira (de Clientes)
+
+Um conjunto de contatos vinculados a um vendedor ou atendente específico. Quando ativa, as novas mensagens daquele cliente são direcionadas automaticamente para o seu responsável.
+
+### Etiqueta (Tag)
+
+Um marcador colorido usado para classificar contatos ou atendimentos (ex.: _"VIP"_, _"Orçamento Enviado"_, _"Aguardando Pagamento"_). Facilita filtros e relatórios.
+
+### Mensagens Rápidas
+
+Modelos de respostas prontas que o atendente dispara com apenas um clique ou atalho no teclado para agilizar dúvidas repetitivas.
+
+### Protocolo
+
+Número único gerado automaticamente para cada atendimento, utilizado para rastrear conversas no histórico e em relatórios.
+
+---
+
+## 🤖 Automação e Inteligência Artificial
+
+### Chatbot (Bot)
+
+Um assistente virtual de triagem que responde automaticamente o cliente seguindo um fluxo de menus e opções criado por você, direcionando a conversa para o setor correto.
+
+### Automação
+
+Regras inteligentes que fazem o sistema executar ações sozinho (enviar mensagem, aplicar etiqueta, mover no Kanban ou transferir conversa) com base em gatilhos como horário ou palavras-chave.
+
+### Campanha
+
+Envio programado de mensagens para uma lista de contatos segmentados (ex.: avisos importantes, promoções ou lembretes).
+
+### Follow-up
+
+Acompanhamento automático após o primeiro contato: o sistema envia mensagens programadas caso o cliente pare de responder, ajudando a recuperar negociações.
+
+### Integração
+
+Conexão da **ZappAssist** com outras ferramentas do seu negócio (CRMs, ERPs, Typebot, n8n, plataformas de checkout) para trocar dados automaticamente.
+
+### Webhook
+
+Um **endereço (URL)** usado para enviar ou receber notificações em tempo real entre sistemas sempre que um evento acontece (como uma nova mensagem ou venda aprovada).
+
+### Inteligência Artificial (IA)
+
+Recursos inteligentes nativos da **ZappAssist** para acelerar o trabalho da equipe: **Copiloto** (sugestão e melhoria de textos), **Transcrição de Áudio** (leitura automática de mensagens de voz) e **Recepção Inteligente** (triagem e classificação automática).
+
+---
+
+## 💬 Precisa de Ajuda?
+
+Ficou com alguma dúvida sobre como utilizar algum recurso? Entre em contato com o suporte oficial da **ZappAssist**:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda a sexta-feira, das 09h às 17h (horário de Brasília)
