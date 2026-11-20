@@ -29,6 +29,12 @@
           "untitled-page-2",
           "politica-de-privacidade"
         ]
+      },
+      {
+        "group": "Atualizações",
+        "pages": [
+          "changelog-e-atualizacoes"
+        ]
       }
     ],
     "global": {

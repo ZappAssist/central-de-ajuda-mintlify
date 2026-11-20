@@ -1,0 +1,267 @@
+---
+title: "Changelog e Atualizações"
+description: "Histórico de versões, novidades, melhorias e correções implementadas na plataforma ZappAssist."
+---
+
+Acompanhe aqui as principais novidades, melhorias de desempenho e correções aplicadas na **ZappAssist**. As atualizações na nuvem são aplicadas continuamente para manter a plataforma estável, segura e atualizada.
+
+---
+
+## 🚀 Versão 3.1.13
+
+### 🐛 Correções
+
+- **WhatsApp (WuzAPI):** correção de falha nas integrações e nos chatbots que impedia o reconhecimento de respostas do tipo lista, contemplando também outros formatos de resposta afetados.
+
+---
+
+## 🚀 Versão 3.1.12
+
+### 🔒 Segurança
+
+- **Atualização de segurança:** aplicação de pacote de atualização de segurança no ambiente do servidor.
+
+---
+
+## 🚀 Versão 3.1.11
+
+### 📲 Canais
+
+- **Hub de Conexões:** suporte expandido para conexões de **Facebook**, **Instagram** e **API Oficial do WhatsApp**.
+- **Conexão Direta Meta:** suporte para conexão direta de **Instagram** e **Facebook**.
+
+---
+
+## 🚀 Versão 3.1.10
+
+### 🔒 Segurança e Melhorias
+
+- **Segurança:** aplicação de novos ajustes para reforçar a proteção e a estabilidade da plataforma.
+- **Kanban Pro:** correção de falhas relacionadas às permissões de acesso e uso dos recursos do quadro.
+
+---
+
+## 🚀 Versão 3.1.9
+
+### 🔒 Segurança
+
+- **Segurança:** aplicação de novos ajustes preventivos para reforçar a segurança da plataforma.
+
+---
+
+## 🚀 Versão 3.1.8
+
+### 🔒 Segurança
+
+- **Atualização de runtime:** atualização da versão do Node.js para reforçar a segurança e manter o ambiente atualizado.
+
+---
+
+## 🚀 Versão 3.1.7
+
+### 🚨 Segurança
+
+- **Recuperação de senha:** correção de vulnerabilidade no fluxo de recuperação de senha e reforço geral de segurança.
+- **Proteção anti-bot:** ativação de camadas adicionais de proteção contra acessos automatizados.
+
+### 🐛 Correções
+
+- **Lista de contatos:** correção no comportamento do filtro ao utilizar a opção de limpar.
+- **Kanban:** correção visual em que etiquetas deixavam de aparecer ao mover cards entre colunas antes de atualizar a tela.
+- **Campanhas:** correção no disparo de mensagens compostas apenas por botões.
+
+---
+
+## 🚀 Versão 3.1.6
+
+### 🐛 Correções
+
+- **Agenda:** correção que impedia a exibição do nome do cliente ao abrir agendamentos concluídos.
+- **Chamadas de voz:** ajuste na leitura de QR Code com o modo escuro ativado.
+- **Tarefas:** correção na visualização do calendário de tarefas.
+
+### 📧 E-mail
+
+- **Teste de conexão:** mensagens de erro mais claras em caso de falha na configuração.
+- **Diagnóstico automático:** verificação automática de portas comuns para auxiliar na identificação de falhas de conexão.
+
+---
+
+## 🚀 Versão 3.1.5
+
+### 🐛 Correções
+
+- **E-mail:** correção na opção de ignorar contato e no status de leitura ao abrir um ticket.
+- **WhatsApp (WuzAPI):** melhorias na confirmação de leitura de mensagens.
+- **Reações:** ajuste para evitar a abertura indevida de novo ticket quando o cliente apenas reage a uma mensagem.
+
+### 📅 Agenda
+
+- **Lembretes:** novas configurações para definir o comportamento dos bots após o envio de lembretes.
+- **Serviços:** campo para adicionar descrição detalhada aos serviços cadastrados.
+
+### 🗂️ Gerenciamento de Arquivos
+
+- **Exclusão em segundo plano:** processamento assíncrono na remoção de arquivos com acompanhamento de progresso na tela.
+
+### 📢 Campanhas
+
+- **Múltiplos números:** possibilidade de alternar entre mais de um número de WhatsApp durante a campanha.
+- **Repetição automática:** opção para agendar recorrência automática de campanhas.
+
+### 🤖 Chatbot e Automação
+
+- **Importação de fluxos:** importação direta de fluxos no editor visual.
+- **API Plus:** recuperação automática de mensagens em webhooks.
+- **Distribuição automática:** novo modo por porcentagem entre atendentes, direcionamento automático para o responsável da carteira de clientes, registro automático na carteira, rodízio por ordem de cadastro e logs detalhados.
+
+### 📇 Contatos e Kanban
+
+- **Ações em massa:** novas operações em lote em listas de contatos, Kanban e Kanban Pro, além de importação direta de contatos para uma coluna do Kanban Pro.
+
+---
+
+## 🚀 Versão 3.1.4
+
+### ⚠️ Atenção
+
+- **Distribuição automática:** a distribuição automática de atendimentos passou a ser gerenciada exclusivamente pelo módulo dedicado de **Distribuição Automática**.
+
+### 📢 Campanhas e Atendimento
+
+- **Campanhas:** novo módulo com suporte a variações de mensagem, controle de intervalos (_delay_) e múltiplas mensagens por contato.
+- **Atendimento:** marcador de mensagens não lidas, opção de marcar ticket como não lido, novos filtros por origem e classificação de lead, além de opção para desagrupar arquivos ao baixar histórico.
+
+### 🤖 Inteligência Artificial e Automação
+
+- **Recepção Inteligente:** limite de caracteres nas respostas para respeitar os limites do WhatsApp e suporte no chat externo.
+- **Classificação automática:** análise automática para apoiar etiquetas, status de atendimento e movimentação no Kanban conforme o plano/adicional.
+- **Regras de automação:** novos logs de execução, execução imediata quando o tempo é configurado como `0` e melhorias de notificação quando não há atendentes online na fila.
+
+### 📅 Agenda e Contatos
+
+- **Agenda:** cancelamento em massa de agendamentos futuros do cliente, ocultação padrão de cancelados, exclusão simplificada e permissão para gerenciar o adicional mesmo com agendamentos ativos.
+- **Contatos:** melhorias na detecção e unificação de contatos duplicados.
+- **Palavras monitoradas:** cadastro de palavras monitoradas durante os atendimentos.
+
+---
+
+## 🚀 Versão 3.1.3
+
+### 📅 Agenda e Formulários
+
+- **Agenda:** calendários por local de atendimento, bloqueio automático de datas indisponíveis no link público, confirmação/aviso via WhatsApp, endereço no link externo, cores por profissional e agendamentos recorrentes.
+- **Formulários:** notificações via WhatsApp e notificações internas.
+
+### 📞 Chamadas, Rastreamento e IA
+
+- **Chamadas de voz:** direcionamento automático do atendimento para o operador que atendeu a chamada, organização automática e transcrição de chamadas.
+- **Chamadas internas:** suporte a gravação e transcrição em áudio.
+- **Rastreamento de site:** novo módulo para acompanhar visitantes e eventos no site.
+- **Recepção Inteligente:** tratamento de erro com registro de nota interna e transferência para fila de contingência quando necessário.
+
+### 🐛 Correções
+
+- **Usuários:** bloqueio da exclusão de usuários que possuem tickets vinculados (abertos ou fechados).
+- **Tarefas:** ajuste no funcionamento de anexos em armazenamento em nuvem.
+
+---
+
+## 🚀 Versão 3.1.2
+
+### ⏱️ Dashboard de SLA e Meta de Vendas
+
+- **Dashboard de SLA:** acompanhamento de tempos de atendimento, metas configuráveis e indicadores de desempenho.
+- **Meta de Vendas:** relatório mensal baseado nas negociações do Kanban, com configuração de etapa de ganho e perda.
+
+### 📅 Agenda e Chatbot
+
+- **Agenda:** links de agendamento com preenchimento prévio de nome e telefone, personalização visual, valor de serviço, janela de horário para envio de lembretes e webhook de eventos.
+- **Chatbot:** novos fluxos guiados de agendamento por serviço, profissional, data e horário, incluindo seleção automática de profissional disponível.
+
+### 🌐 WebChat e Atendimento
+
+- **WebChat:** rastreamento de visitantes, mensagem inicial automática e possibilidade de iniciar contato direto com visitante.
+- **Atendimento:** exibição de data em tickets com mais de 7 dias e seleção pontual por _checkbox_ para ações em massa.
+
+---
+
+## 🚀 Versão 3.1.1
+
+### 📅 Agenda e Relatórios
+
+- **Agenda:** configuração de data limite para agendamento, visualização de indisponibilidade, agendamento direto pelo atendente com horários livres, módulo de recepção para controle de chegada/espera/atendimento, foto do profissional e relatórios dedicados.
+- **Relatórios:** melhor organização geral e visualização de métricas.
+
+### 💬 Atendimento e API Oficial
+
+- **Atendimento:** atalho para contratação de adicional diretamente ao atingir o limite de IA do Copilot.
+- **API Oficial:** agrupamento de mensagens sequenciais para reduzir envios na API Oficial e opção de link de chat externo para continuidade do atendimento.
+
+### 🐛 Correções
+
+- **E-mail e Calendário:** ajustes na exibição de erros de envio de e-mail e prevenção de duplicidade na sincronização de agenda.
+
+---
+
+## 🚀 Versão 3.1.0
+
+### 📅 Novo Módulo de Agenda e Canal Privado
+
+- **Agenda:** sincronização com Google Agenda, cadastro de serviços, duração, vínculo com profissionais e horários, lembretes com confirmação/cancelamento, link público e _embed_, além de agendamento via Chatbot, Recepção Inteligente e tela de atendimento.
+- **Canal Privado:** canal restrito a um usuário administrador proprietário, oculto para os demais usuários.
+
+### 💬 Atendimento, Chatbot e Chamadas
+
+- **Atendimento:** fixação de mensagens na conversa e distribuição automática direta para fila.
+- **Chatbot:** transferência por inatividade para outro fluxo e configuração de inatividade por etapa.
+- **Chamadas e Conferência:** chamadas de áudio/vídeo no chat interno, gravação de chamadas de voz e envio de link de conferência na tela de atendimento.
+
+### 💳 Pagamentos e Canais
+
+- **Pagamentos:** geração instantânea de QR Code PIX com validação de CPF.
+- **Canais:** cadastro simplificado para novos usuários e suporte ampliado para canais e adicionais.
+
+---
+
+## 🚀 Versão 3.0.2
+
+### ✨ Melhorias e Correções
+
+- **Canal de E-mail:** maior compatibilidade com servidores IMAP, POP e SMTP.
+- **Agendamento:** correção na exclusão de agendamentos de redes sociais.
+- **Armazenamento e IA:** correção no cálculo de espaço contratado adicional e reinício mensal do consumo de IA.
+
+---
+
+## 🚀 Versão 3.0.1
+
+### 🐛 Correções e Ajustes
+
+- **Interface e Marca:** ajustes visuais e de identidade da plataforma.
+- **Chat Interno:** correção ao colar mensagens para evitar envio no atendimento incorreto e inclusão do ID do ticket ao encaminhar mensagens.
+- **Recepção Inteligente:** ajuste para não ler anotações internas durante o atendimento automatizado e suporte a fila na transferência para usuário.
+
+---
+
+## 🚀 Versão 3.0.0
+
+### 🚀 Principais Novidades
+
+- **Nova Interface e Performance:** atualização completa da interface (ChatFlow, Dashboard, Atendimento, Chat Interno, Contatos e Kanban) com maior velocidade e atualização em tempo real.
+- **Kanban e Kanban Pro:** abertura do atendimento diretamente pelo card do Kanban e atualização em tempo real entre usuários.
+- **Novos Canais e Módulos:** suporte a **E-mail**, **Tracking Links**, **Formulários**, **Transcrição de Áudio**, **Automação de Entrada**, **Automação de Comentários**, **Regras de Automação**, **Agendamento de Publicações** e **Chamadas de Voz**.
+- **Inteligência Artificial:** suporte a **Copiloto**, **Recepção Inteligente**, classificação de leads e recursos integrados de IA conforme o plano ou adicional.
+- **Atendimento e Follow-up:** adição de colaborador no ticket, histórico de mídias por contato, transcrição de áudios e cancelamento automático de follow-up quando o cliente responde.
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Tem dúvidas sobre alguma atualização ou precisa de ajuda para configurar um novo recurso? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis
