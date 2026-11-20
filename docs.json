@@ -1,20 +1,22 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "ZappAssist",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/favicon.ico",
+    "dark": "/images/favicon.ico"
+  },
   "navigation": {
     "pages": [
       {
         "group": "Getting Started",
         "pages": [
-          "index",
-          "quickstart"
+          "introducao"
         ]
       }
     ],
@@ -34,8 +36,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/1logo.png.png",
+    "dark": "/images/Designsemnome(1).png"
   },
   "navbar": {
     "links": [
@@ -68,5 +70,6 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
+  },
+  "description": "Base de conhecimento"
 }
