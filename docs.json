@@ -55,8 +55,15 @@
               "como-criar-templates-api-oficial",
               "como-enviar-templates"
             ]
-          }
+          },
+          "telegram-bot-oficial",
+          "web-chat",
+          "e-mail"
         ]
+      },
+      {
+        "group": "Funcionalidades",
+        "pages": []
       }
     ],
     "global": {
