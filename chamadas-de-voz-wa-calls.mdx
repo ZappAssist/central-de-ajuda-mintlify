@@ -1,0 +1,128 @@
+---
+title: "Chamadas de Voz (WaCalls)"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-21T05:28:16.740Z"
+description: "Faça e receba chamadas de voz do WhatsApp direto no painel da ZappAssist, com organização automática de tickets, gravação, transcrição e relatórios."
+---
+
+O recurso de **Chamadas de Voz (WaCalls)** permite que sua equipe **faça e receba chamadas de voz do WhatsApp diretamente no painel da ZappAssist**, sem depender de aparelho celular na mesa e organizando o atendimento automaticamente.
+
+<Info>
+  **Disponibilidade:** a liberação das chamadas de voz ocorre **conforme o plano contratado** ou mediante a contratação do adicional correspondente diretamente no painel da **ZappAssist** (já operando em infraestrutura em nuvem, sem necessidade de gerenciar servidor próprio).
+</Info>
+
+<Note>
+  **Vídeo do YouTube — Chamadas de Voz na ZappAssist**
+
+  - **Sugestão de aula:** "Como Configurar e Usar Chamadas de Voz, Gravação e Transcrição na ZappAssist"
+  - **Link do vídeo:** `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
+</Note>
+
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Tela de Chamadas de Voz na ZappAssist exibindo a conexão do canal, usuários com acesso, gravação e organização automática.
+
+---
+
+## 📍 Onde Encontrar
+
+No menu lateral da **ZappAssist**, acesse:
+
+**Automação e Integrações → Chamadas de Voz**
+
+---
+
+## ✅ Principais Recursos
+
+- **Receber chamadas:** ligações de voz do WhatsApp tocam no painel para os usuários autorizados;
+- **Fazer chamadas:** inicie chamadas diretamente a partir da tela de atendimento do contato;
+- **Organização automática:** direciona o atendimento do contato para quem atendeu a ligação;
+- **Gravação de chamadas:** grava o áudio das chamadas atendidas conforme a configuração do canal;
+- **Transcrição de chamadas:** converte chamadas gravadas em texto sob demanda no relatório;
+- **Relatório completo:** acompanhe histórico, status, gravações, transcrições e exportações.
+
+---
+
+## 🔗 Como Conectar o Canal às Chamadas
+
+<Warning>
+  **Compatibilidade:** as chamadas de voz por este recurso aplicam-se a conexões de WhatsApp compatíveis (como conexões via **QR Code**). Canais via API Oficial (WABA) seguem regras próprias da Meta.
+</Warning>
+
+1. Acesse **Automação e Integrações → Chamadas de Voz**;
+2. Em **Escolha um canal**, selecione a conexão de WhatsApp desejada e clique em **Usar neste canal** (respeitando a quantidade de canais de chamada liberada no seu plano ou adicional);
+3. Clique em **Ler QR Code** e escaneie com o aplicativo WhatsApp vinculado ao número até o status ficar **Conectado**;
+4. Caso precise alterar o canal no futuro, utilize a opção para **trocar** ou **desvincular** a sessão.
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Sessão de chamadas conectada com status ativo após a leitura do QR Code.
+
+---
+
+## 👥 Permissões de Usuários
+
+Somente os usuários habilitados podem operar chamadas no canal:
+
+- Na seção **Usuários com acesso**, visualize a quantidade e a relação de usuários liberados;
+- Clique em **Gerenciar acessos** para abrir a gestão de usuários e ativar ou remover a permissão de chamadas de cada membro da equipe.
+
+---
+
+## 🎯 Organização Automática do Atendimento
+
+Quando a opção **“Organizar automaticamente o atendimento ao atender uma ligação”** está ativa (padrão):
+
+- **Atribuição direta:** o atendimento do contato é direcionado automaticamente para o atendente que atendeu a chamada;
+- **Fila correspondente:** o ticket é vinculado à fila da qual o atendente participa, quando aplicável;
+- **Respeito a responsável existente:** caso o ticket já possua outro responsável atribuído, a regra não altera esse responsável.
+
+---
+
+## 🎧 Gravação e 📝 Transcrição de Chamadas
+
+### Gravação de chamadas
+
+- Ative **“Gravar novas chamadas”** para gravar automaticamente o áudio das chamadas atendidas;
+- Ao desativar, novas chamadas deixam de ser gravadas, mas as gravações anteriores permanecem salvas (respeitando eventuais políticas de retenção/exclusão configuradas).
+
+### Transcrição sob demanda
+
+As chamadas gravadas podem ser transcritas em texto diretamente no **Relatório das Ligações**:
+
+1. Acesse **Relatórios → Relatório das Ligações**;
+2. Localize a ligação com gravação e clique em **Transcrever áudio**;
+3. Aguarde a conclusão e clique em **Ver transcrição** para ler ou copiar o texto sempre que precisar.
+
+---
+
+## 📊 Relatório das Ligações
+
+Disponível em **Relatórios → Relatório das Ligações** para administradores e supervisores:
+
+- **Indicadores no topo:** visão geral de **Total de Chamadas**, **Recebidas**, **Realizadas** e **Todas** (com filtro rápido por direção);
+- **Filtros:** filtre por usuário, contato, ticket, canal e intervalo de datas (padrão dos últimos 30 dias);
+- **Detalhes na tabela:** direção, status (_Atendida_, _Chamando_, _Terminada_ ou _Transferida_), usuário, contato, player de áudio da gravação, link para o ticket, canal e data/hora;
+- **Gestão de gravações e exportação:** reproduza, transcreva ou exclua gravações (individualmente ou em lote, com confirmação) e exporte os dados para planilha ou impressão.
+
+> 📸 **[INSERIR PRINT / IMAGEM 3]**<br />_Descrição do print:_ Relatório das Ligações exibindo filtros, colunas da tabela, player de áudio e opção de transcrição.
+
+---
+
+## ❓ Dúvidas Rápidas
+
+- **As chamadas não tocam para a equipe:** verifique se a sessão de chamadas está com status **Conectado** e se os atendentes possuem a permissão de chamadas ativa.
+- **Não aparece o botão de transcrever:** confirme se a chamada possui gravação de áudio e se o serviço de transcrição está habilitado na conta.
+- **Preciso assumir o ticket manualmente após atender:** mantenha **Organizar automaticamente o atendimento ao atender uma ligação** ativado para que o sistema direcione o atendimento automaticamente.
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Precisa de ajuda para configurar as chamadas de voz, permissões ou adicionais na ZappAssist? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis

@@ -63,7 +63,18 @@
       },
       {
         "group": "Funcionalidades",
-        "pages": []
+        "pages": [
+          "canal-privado",
+          "bloquear-chamadas-do-whats-app",
+          "chamadas-de-voz-wa-calls",
+          "chamadas-internas",
+          {
+            "group": "Atendimento",
+            "pages": [
+              "tela-atendimento"
+            ]
+          }
+        ]
       }
     ],
     "global": {
