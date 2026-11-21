@@ -40,7 +40,13 @@
         "group": "Canais Disponíveis",
         "pages": [
           "canais-disponiveis",
-          "whats-app-via-qr-code",
+          {
+            "group": "WhatsApp via QR Code",
+            "pages": [
+              "whats-app-via-qr-code",
+              "whats-app-plus-recursos-interativos"
+            ]
+          },
           {
             "group": "API Oficial do WhatsApp",
             "pages": [
