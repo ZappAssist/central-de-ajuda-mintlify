@@ -1,0 +1,103 @@
+---
+title: "Palavras Monitoradas"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-21T14:33:59.481Z"
+description: "Monitore palavras ou expressões importantes nas conversas do WhatsApp, receba alertas em tempo real e acompanhe ocorrências em relatórios na ZappAssist."
+---
+
+O recurso de **Palavras Monitoradas** permite acompanhar o uso de palavras ou expressões estratégicas nas conversas do WhatsApp (como _"reclamação"_, _"processo"_, _"cancelamento"_ ou _"devolução"_), registrando cada ocorrência em relatório e notificando a supervisão em tempo real quando configurado.
+
+<Info>
+  **Disponibilidade e visibilidade:** este recurso é acessado exclusivamente por usuários com perfil de **Administrador** ou **Supervisor**. Atendentes não visualizam o módulo nem sabem quais termos estão monitorados.
+</Info>
+
+<Note>
+  **Vídeo do YouTube — Configurando Palavras Monitoradas**
+
+  - **Sugestão de aula:** "Como Monitorar Palavras-Chave e Receber Alertas nas Conversas da ZappAssist"
+  - **Link do vídeo:** `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
+</Note>
+
+---
+
+## 🎯 Para Que Serve e Onde Encontrar
+
+- **Identificação rápida:** saiba quando e em quais tickets termos críticos foram utilizados por clientes, atendentes ou mensagens automáticas do sistema;
+- **Alertas em tempo real:** notifique supervisores imediatamente sem precisar acompanhar todas as conversas manualmente;
+- **Auditoria em relatório:** consulte o histórico completo de ocorrências por período, usuário ou termo, com opção de exportação.
+
+### Onde Acessar
+
+1. No painel da **ZappAssist**, abra o menu **Configurações**;
+2. Selecione o card **Palavras Monitoradas**;
+3. Para consultar o histórico de detecções, utilize o botão **Ver relatório** (ou acesse o menu **Relatórios**).
+
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Tela inicial de Palavras Monitoradas na ZappAssist exibindo a lista de termos cadastrados, status de ativação, alertas e ações.
+
+---
+
+## ⚙️ Como Cadastrar, Editar e Gerenciar Palavras
+
+### Cadastrar uma Nova Palavra
+
+1. Na tela de **Palavras Monitoradas**, clique em **Adicionar palavra**;
+2. Digite a **Palavra ou expressão** desejada (de 2 a 120 caracteres);
+3. Configure as opções:
+   - **Ativa:** habilita a detecção da palavra nas mensagens;
+   - **Avisar quando detectar:** dispara notificação em tempo real para a supervisão sempre que a palavra ativa for identificada;
+4. Clique em **Salvar**.
+
+### Regras de Comparação do Texto
+
+- **Sem distinção de maiúsculas ou acentos:** termos como `"Devolução"`, `"devolucao"` e `"DEVOLUÇÃO"` são tratados como equivalentes;
+- **Correspondência literal:** o sistema busca exatamente a sequência cadastrada (sem uso de expressões regulares ou caracteres coringa). Caso queira monitorar variações de uma palavra, cadastre cada variação separadamente;
+- **Sem duplicidade:** não é possível cadastrar a mesma palavra mais de uma vez.
+
+### Editar, Desativar ou Excluir
+
+- **Editar:** permite alterar o texto do termo e ligar ou desligar as opções **Ativa** e **Avisar**;
+- **Desativar vs. Excluir:** caso queira pausar o monitoramento temporariamente sem perder o cadastro, basta deixar a palavra como **inativa**. Tanto a desativação quanto a exclusão interrompem novas detecções a partir daquele momento, mantendo intactas as ocorrências já registradas no relatório.
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Modal de cadastro/edição de palavra monitorada com as chaves Ativa e Avisar quando detectar.
+
+---
+
+## 🔔 Avisos Automáticos para Supervisão
+
+Quando uma palavra com a opção **Avisar** ativa é detectada em uma conversa, o alerta é enviado por dois canais complementares:
+
+| Canal de Notificação | Como Funciona | Requisito |
+| :-- | :-- | :-- |
+| **Notificação no sistema** | Exibida dentro do painel da **ZappAssist** enquanto estiver aberto | Permissão de notificação habilitada no navegador |
+| **WebPush** | Alerta entregue no dispositivo mesmo com a aba fechada | Notificações WebPush ativadas no navegador/dispositivo |
+
+### Regras de Destinatários e Privacidade do Alerta
+
+- **Administrador e Supervisor:** recebem alertas de todos os atendimentos da empresa;
+- **Supervisor de Fila:** recebe alertas apenas dos tickets vinculados às suas filas;
+- **Canal Privado:** alertas ocorridos em um Canal Privado são enviados exclusivamente ao **proprietário** daquele canal;
+- **Agrupamento e sigilo:** é disparado **um único alerta por mensagem** (mesmo que contenha várias palavras monitoradas) e o aviso informa apenas quem escreveu (_Cliente_, _Atendente_ ou _Sistema_), os termos detectados e o link/número do ticket — sem expor o conteúdo completo da mensagem.
+
+---
+
+## ❓ Perguntas Frequentes
+
+- **Palavras excluídas ou desativadas somem do relatório?**<br />Não. Apenas novas detecções deixam de ser registradas; todo o histórico anterior permanece disponível no relatório.
+- **Desligar a opção "Avisar" interrompe o monitoramento?**<br />Não. As ocorrências continuam sendo contabilizadas normalmente no relatório, apenas sem enviar notificações em tempo real.
+- **O que significa a origem "Sistema" no relatório?**<br />Indica que o termo foi detectado em uma mensagem automática disparada pela própria plataforma (como mensagens de saudação, ausência ou encerramento).
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Precisa de ajuda para configurar Palavras Monitoradas, alertas ou relatórios na ZappAssist? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis

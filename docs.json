@@ -71,7 +71,12 @@
           {
             "group": "Atendimento",
             "pages": [
-              "tela-atendimento"
+              "tela-atendimento",
+              "avaliacao-de-atendimento",
+              "palavras-monitoradas",
+              "follow-up",
+              "mensagens-de-despedida",
+              "motivos-de-encerramento"
             ]
           }
         ]

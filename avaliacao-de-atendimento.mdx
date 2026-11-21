@@ -1,0 +1,147 @@
+---
+title: "Avaliação de Atendimento"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-21T14:32:14.419Z"
+description: "Configure pesquisas de satisfação automáticas após o encerramento de tickets, colete feedback de notas baixas e analise avaliações com IA na ZappAssist."
+---
+
+A funcionalidade de **Avaliação de Atendimento** permite enviar automaticamente uma pesquisa de satisfação ao cliente logo após o encerramento de um ticket na **ZappAssist**, ajudando a medir a qualidade do suporte e identificar pontos de melhoria.
+
+<Info>
+  **Disponibilidade:** os recursos de avaliação, listas interativas e análise por IA operam **conforme o plano contratado** (ou adicionais ativos) na sua conta da **ZappAssist**.
+</Info>
+
+<Note>
+  **Vídeo do YouTube — Configurando a Avaliação de Atendimento**
+
+  - **Sugestão de aula:** "Como Configurar Pesquisa de Satisfação e Análise com IA na ZappAssist"
+  - **Link do vídeo:** `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
+</Note>
+
+---
+
+## ⚙️ Passos para Configuração
+
+A configuração é feita **individualmente por canal** (com opção de replicar para outros canais depois):
+
+1. No painel da **ZappAssist**, acesse **Configurações de Atendimento → Avaliação de Atendimento**;
+2. No campo **Canal**, selecione o canal onde deseja ativar a pesquisa;
+3. Ative a opção **Ativar avaliação automática**;
+4. Preencha os campos de mensagem e regras da pesquisa;
+5. Clique em **Salvar Configuração**.
+
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Tela de configuração da Avaliação de Atendimento na ZappAssist com seleção de canal e campos principais.
+
+---
+
+## 🛠️ Campos e Regras da Pesquisa
+
+### 1. Mensagem enviada ao cliente
+
+Texto enviado automaticamente quando o atendimento é finalizado, solicitando a nota.
+
+- **Exemplo:** `"Por favor, avalie nosso atendimento com uma nota de 1 a 5. Sua opinião é muito importante para nós!"`
+
+### 2. Mensagem de agradecimento
+
+Texto enviado automaticamente após o cliente responder com uma nota válida.
+
+- **Exemplo:** `"Obrigado por compartilhar sua opinião! Estamos sempre buscando melhorar."`
+
+### 3. Mensagem de avaliação inválida
+
+Texto enviado caso o cliente responda fora do formato esperado (quando não é uma nota válida).
+
+- **Exemplo:** `"Sua avaliação não foi válida. Por favor, envie uma nota entre 1 e 5."`
+
+### 4. Tempo de espera (minutos)
+
+Define por quantos minutos o sistema aguarda a resposta da avaliação após encerrar o ticket (ex.: `10` minutos).
+
+### 5. Mensagem quando o prazo expira
+
+Texto enviado caso o tempo limite seja atingido sem resposta do cliente (se deixado em branco, nenhuma mensagem é enviada).
+
+- **Exemplo:** `"O prazo para avaliação foi encerrado. Agradecemos seu contato!"`
+
+### 6. Intervalo entre avaliações (horas)
+
+Tempo mínimo entre solicitações de avaliação para o mesmo contato (ex.: configurando `6` horas, o mesmo cliente não recebe nova pesquisa antes desse intervalo).
+
+---
+
+## ✅ Avaliação Voluntária e Feedback em Nota Baixa
+
+### Avaliação voluntária
+
+Quando ativada, evita que o cliente fique preso na etapa de avaliação caso queira continuar conversando:
+
+- Se o cliente enviar uma mensagem que não seja uma nota válida, a avaliação pendente é cancelada, a mensagem de avaliação inválida é enviada e um **novo ticket é aberto automaticamente** para dar continuidade ao atendimento.
+
+### Solicitar feedback após nota baixa
+
+Permite coletar o motivo da insatisfação quando a nota for menor ou igual ao limite definido (ex.: menor ou igual a `3`):
+
+1. O cliente responde com uma nota dentro do limite configurado (ex.: `1`, `2` ou `3`);
+2. O sistema envia automaticamente uma pergunta solicitando detalhes (ex.: `"Sentimos muito pela sua experiência. Poderia nos informar o motivo da sua avaliação?"`);
+3. A resposta do cliente fica registrada no histórico do ticket e no **Relatório de Avaliações**.
+
+---
+
+## 🧠 Análise de Avaliações com IA
+
+Na própria tela de **Avaliação de Atendimento**, você pode ativar a opção **Analisar avaliações com IA** para identificar os motivos por trás das notas recebidas:
+
+1. Ative **Analisar avaliações com IA**;
+2. Selecione quais notas devem ser analisadas automaticamente (ex.: **1★, 2★ e 3★**, ou **Todas as notas**);
+3. Defina a quantidade de mensagens do histórico consideradas na análise (`50`, `100`, `200` ou `500`);
+4. Clique em **Salvar Configuração**.
+
+<Warning>
+  **Configuração da IA:** a análise utiliza a mesma integração de IA configurada para o **Assistente IA (Copiloto)** da sua conta. Caso ainda não esteja configurada, utilize o atalho de configuração exibido na tela.
+</Warning>
+
+No menu **Relatórios → Avaliações**, a coluna **Análise da IA** exibe o status de cada avaliação (_Analisar com IA_, _Analisando..._ ou _Ver análise_), permitindo consultar o diagnóstico da IA ou disparar a análise sob demanda.
+
+---
+
+## 📋 Formato de Lista Interativa
+
+Nos canais compatíveis — **WhatsApp Plus** e **API Oficial do WhatsApp (WABA)** —, você pode ativar o envio da pesquisa como uma **lista interativa** em vez de texto simples:
+
+- **Texto do Botão:** rótulo do botão que abre as opções (ex.: `"Avaliar Atendimento"`);
+- **Texto Adicional da Lista:** mensagem complementar exibida junto à lista (ex.: `"Selecione abaixo a nota para nosso atendimento."`);
+- **Opções da Lista:** personalização dos itens exibidos de 1 a 5 (ex.: _Péssimo_, _Ruim_, _Regular_, _Bom_, _Excelente_).
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Exemplo da lista interativa de avaliação exibida no WhatsApp do cliente.
+
+---
+
+## 📊 Relatório de Avaliações e Replicação para Outros Canais
+
+### Monitoramento em Relatórios → Avaliações
+
+- **Indicadores no topo:** média geral e contagem por nível de satisfação (clicáveis para filtrar);
+- **Filtros e colunas:** filtre por **usuário, canal e período** (padrão dos últimos 30 dias), visualizando **Ticket**, **Avaliação**, **Usuário Avaliado**, **Contato**, **Data**, **Feedback do cliente** e **Análise da IA**, com opção de **exportar para Excel**.
+
+> 📸 **[INSERIR PRINT / IMAGEM 3]**<br />_Descrição do print:_ Tela do Relatório de Avaliações exibindo cards de média, filtros e tabela com feedback e análise da IA.
+
+### Copiar configuração para outros canais
+
+Após configurar e salvar um canal, clique em **Copiar para outros canais** (ao lado do botão de salvar), marque os canais de destino e confirme. Apenas as regras de avaliação são replicadas (canais sem suporte a lista interativa recebem apenas os campos de texto).
+
+---
+
+## 💬 Suporte Oficial ZappAssist
+
+Precisa de ajuda para configurar a pesquisa de satisfação ou a análise com IA na ZappAssist? Fale com a nossa equipe:
+
+- **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
+- **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
+- **Site Oficial:** [www.zappassist.com.br](https://www.zappassist.com.br)
+- **Horário de Atendimento:** Segunda-feira a sábado, das 09h00 às 20h00 (horário de Brasília – BRT)
+- **Prazo Estimado de Resposta:** Até 2 (duas) horas úteis

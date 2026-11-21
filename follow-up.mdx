@@ -1,0 +1,112 @@
+---
+title: "Follow-up"
+verification:
+  status: "verified"
+  by:
+    type: "user"
+    id: "6a5cd58d37a712905f1488cc"
+  at: "2026-11-21T14:35:21.024Z"
+description: "Automatize sequências de acompanhamento pós-contato no WhatsApp com janelas de horário permitidas, cálculo de offset, disparo pela tela de atendimento ou API e relatórios na ZappAssist."
+---
+
+O recurso de **Follow-up** permite criar réguas automáticas de acompanhamento para manter o relacionamento com clientes e leads após o primeiro contato — ajudando a esclarecer dúvidas, reforçar propostas comerciais e aumentar suas taxas de conversão na **ZappAssist**.
+
+<Info>
+  **Disponibilidade:** o módulo de Follow-up e suas integrações via API/automação operam **conforme o plano contratado** (ou adicionais ativos) na sua conta da **ZappAssist**.
+</Info>
+
+<Note>
+  **Vídeo do YouTube — Configurando Réguas de Follow-up**
+
+  - **Sugestão de aula:** "Como Criar Sequências Automáticas de Follow-up no WhatsApp com a ZappAssist"
+  - **Link do vídeo:** `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
+</Note>
+
+---
+
+## 📬 O Que é Follow-up e Boas Práticas
+
+Em vendas e atendimento, **follow-up** consiste em acompanhar o contato após uma interação inicial (como envio de orçamento, demonstração ou dúvida comercial) para conduzir o cliente até o próximo passo.
+
+### Exemplos Práticos de Mensagens
+
+- **Após o envio de um orçamento:** `"Olá! Tudo certo? Só passando para saber se teve tempo de analisar a proposta que enviei ontem. Posso te ajudar com alguma dúvida?"`
+- **Após uma demonstração:** `"Gostou da apresentação? Fico à disposição para ajustar a proposta ou esclarecer qualquer ponto!"`
+- **Quando o cliente pediu tempo para decidir:** `"Você comentou que precisava de alguns dias para analisar. Posso te ajudar com mais alguma informação?"`
+
+### Boas Práticas
+
+- **Agilidade com equilíbrio:** responda rápido, mas evite excesso de mensagens seguidas;
+- **Personalização:** utilize o contexto da conversa e mantenha um objetivo claro em cada etapa;
+- **Chamada para ação objetiva:** proponha um próximo passo claro (ex.: _"Posso te chamar amanhã às 10h para alinharmos a proposta?"_).
+
+---
+
+## ⚙️ Configuração do Follow-up no Painel
+
+1. No menu lateral da **ZappAssist**, acesse **Automação e Integrações → Follow-up**;
+2. Crie um novo modelo ou edite um existente preenchendo os campos principais:
+   - **Nome:** identificação interna do fluxo (exibida no painel e nos relatórios);
+   - **Conexão WhatsApp:** define qual canal realizará os disparos da régua;
+   - **Cancelar Follow-up ao responder:** quando ativado, interrompe automaticamente as etapas pendentes assim que o cliente enviar qualquer resposta (padrão: _desativado_);
+   - **Horário Inicial e Final Permitido para Envio:** define a janela comercial autorizada para os disparos.
+
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Tela de cadastro/configuração do Follow-up na ZappAssist exibindo nome, conexão, cancelamento ao responder e janela de horário permitido.
+
+---
+
+## 🕒 Janela de Envio Permitida e Cálculo de Offset
+
+### Como Funciona a Janela Permitida
+
+Ao definir um intervalo permitido (por exemplo, **08:00 às 20:00**), o sistema respeita esse horário para evitar disparos fora do expediente:
+
+- Se o cálculo apontar envio para **21:00**, o disparo é reagendado para **08:00 do dia seguinte**;
+- Se o cálculo apontar envio para **03:00**, o disparo é ajustado para **08:00 do mesmo dia**;
+- Se cair dentro do intervalo configurado, o envio ocorre normalmente no horário calculado.
+
+### Como Funciona o Offset (em minutos)
+
+O **Offset** define o tempo de espera em **minutos** para cada etapa da régua:
+
+- **Primeira mensagem:** calculada a partir do horário em que o cliente entra no follow-up (ex.: entrada às `10:00` com offset de `10` minutos → envio às `10:10`; offset de `7200` minutos equivale a 5 dias);
+- **Mensagens seguintes:** calculadas sempre a partir do **horário real em que a mensagem anterior foi enviada** (ex.: mensagem anterior enviada às `12:10` + offset de `60` minutos → próximo envio às `13:10`).
+
+---
+
+## ✉️ Cadastrar e Organizar Mensagens
+
+Na etapa de mensagens do modelo de Follow-up, adicione quantos passos forem necessários:
+
+- **Mensagem:** conteúdo enviado ao cliente (suporta **texto simples**, **templates**, **botões** e **arquivos** conforme o canal);
+- **Offset:** intervalo de espera em minutos;
+- **Arquivo (opcional):** anexo enviado junto com a etapa.
+
+Na tela de organização, você pode **reordenar** a sequência das mensagens, **editar textos**, **ajustar offsets** ou **excluir etapas**.
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Tela de cadastro e organização das mensagens da régua de Follow-up com campos de texto, offset e anexo.
+
+---
+
+## ▶️ Como Iniciar ou Remover um Cliente no Follow-up
+
+Você pode vincular ou remover um contato de um fluxo de Follow-up por três caminhos:
+
+### 1. Pela Tela de Atendimento
+
+No **Painel do Cliente** (aba **Perfil**), selecione o fluxo desejado no campo **Follow-up (túnel)** para iniciar ou alterar o acompanhamento diretamente durante o atendimento.
+
+> 📸 **[INSERIR PRINT / IMAGEM 3]**<br />_Descrição do print:_ Campo Follow-up no painel lateral da tela de Atendimento da ZappAssist.
+
+### 2. Via API (`POST /updatefollowup`)
+
+Envie uma requisição **POST** para o endpoint `/updatefollowup` informando o identificador do cliente/ticket e o ID do follow-up (`followup: 0` para remover):
+
+**Por número:**
+
+```json
+{
+  "number": "5511999999999",
+  "followup": 1
+}
+```

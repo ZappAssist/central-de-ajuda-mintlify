@@ -9,111 +9,314 @@ verification:
 description: "Guia da tela Atendimento da ZappAssist — como localizar conversas, filtrar tickets, responder clientes e usar recursos de apoio."
 ---
 
-A tela **Atendimento** é o centro da operação diária na **ZappAssist**: é onde sua equipe visualiza mensagens, assume tickets, responde clientes, transfere atendimentos e encerra conversas.
-
-<Info>
-  **Disponibilidade:** os recursos e canais exibidos na tela de atendimento seguem **conforme o plano contratado** (ou adicionais ativos) e as permissões definidas para o seu perfil na **ZappAssist**.
-</Info>
-
-<Note>
-  **Vídeo do YouTube — Visão Geral da Tela de Atendimento**
-
-  - **Sugestão de aula:** "Como Usar a Tela de Atendimento da ZappAssist no Dia a Dia"
-  - **Link do vídeo:** `https://www.youtube.com/watch?v=SEU_LINK_AQUI`
-</Note>
-
----
-
 ## 🖥️ Conhecendo a Tela
 
-Ao abrir o menu **Atendimento**, a interface se divide nas seguintes áreas principais:
+Ao abrir o menu **Atendimento**, a tela é dividida em quatro áreas principais:
 
 | Área | Função |
 | :-- | :-- |
 | **Lista de atendimentos** (esquerda) | Fila de conversas separadas por abas e status (_Abertos_, _Pendentes_, _Fechados_, _Arquivados_) |
 | **Barra de busca e filtros** | Pesquisa por contato, mensagem ou número do ticket, além de filtros avançados |
 | **Área da conversa** (centro) | Histórico de mensagens, envio de respostas, anexos, áudio e menu de ações |
-| **Painel do cliente** (direita) | Dados do contato, etiquetas, carteira, CRM, anotações e histórico/agendamentos |
+| **Painel do cliente** (direita) | Informações do contato: etiquetas, carteira, CRM, anotações e agenda |
 
-> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Visão geral da tela de Atendimento da ZappAssist mostrando lista de conversas, área de mensagens e painel do cliente.
+> 📸 **[INSERIR PRINT / IMAGEM 1]**<br />_Descrição do print:_ Visão geral da tela de Atendimento na ZappAssist mostrando lista de conversas, busca/filtros, área da conversa e painel do cliente.
 
-### Botões Rápidos no Topo da Lista
+### Botões do Topo da Lista
 
-- **Chat Interno:** abre o bate-papo interno da equipe (um indicador numérico destaca mensagens não lidas);
-- **Criar Tarefa:** registra tarefas para você ou para outro membro da equipe (um indicador destaca tarefas vencendo hoje ou atrasadas);
-- **Suporte:** acesso rápido aos canais oficiais de suporte da **ZappAssist**;
-- **Telefone:** abre o discador/recursos de chamada quando habilitado na conta.
+No topo da lista de atendimentos ficam os atalhos rápidos:
 
-No desktop, você pode **redimensionar** a largura da lista arrastando a borda ou **recolher/expandir** o painel para ampliar a área de leitura da conversa.
+- **Chat Interno:** abre a conversa interna da equipe (entre colegas). Um indicador numérico destaca mensagens internas não lidas;
+- **Criar Tarefa:** registra uma tarefa para você ou para outro membro da equipe. Um indicador destaca tarefas vencendo hoje ou atrasadas;
+- **Suporte:** abre o acesso rápido aos canais de suporte da **ZappAssist**;
+- **Telefone:** abre o discador para chamadas quando o recurso estiver configurado na conta;
+- No celular, também aparecem os botões para **atualizar conversas** e **retornar ao menu**.
 
-### Abas e Status da Lista
+No desktop, você pode **arrastar a borda** da lista de conversas para ajustar a largura ou **recolher/expandir** o painel para ganhar mais espaço na área da conversa.
 
-A lista de atendimentos organiza as conversas em abas como **Individual**, **Grupos** (quando habilitado) e **Arquivados**, com contadores de status:
+### Abas e Pílulas de Status da Lista
 
-| Status / Marcador | O que significa |
-| :-- | :-- |
-| **Aberto** | Atendimento ativo com um responsável designado; permite o envio de mensagens ao cliente |
-| **Pendente** | Atendimento aguardando ser assumido na fila (visualização conforme permissões da equipe) |
-| **Fechado** | Atendimento encerrado; permanece registrado e pode ser reaberto conforme permissão |
-| **Fixado** | Conversa presa no topo da lista (com opção de reordenar prioridade entre fixados) |
-| **Arquivado** | Conversa movida para a aba **Arquivados** para limpar a visualização principal |
-| **Sem resposta** | Conversa aberta em que a última mensagem veio do cliente e ainda aguarda retorno da equipe |
+Logo abaixo dos botões rápidos, a lista é organizada em abas:
 
-> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Abas e pílulas de status da lista de atendimentos exibindo contadores e ações rápidas ao passar o mouse.
+- **Individual:** conversas diretas com cada contato;
+- **Grupos:** conversas em grupos (exibida quando o atendimento a grupos estiver habilitado na conta);
+- **Arquivados:** conversas movidas para a aba de arquivados para sair da lista principal.
+
+Dentro das abas **Individual** e **Grupos**, as pílulas de status mostram a quantidade de conversas em cada etapa:
+
+- **Abertos:** atendimentos em andamento (o contador destaca mensagens não lidas);
+- **Pendentes:** atendimentos aguardando alguém assumir na fila;
+- **Fechados:** atendimentos já encerrados;
+- **Chatbot:** exibida quando a separação de conversas em atendimento automatizado/IA estiver ativa (enquanto ativa, **Pendentes** exibe apenas as conversas que não estão com o robô).
+
+<Info>
+  **Visualização de abas e pílulas:** dependendo das configurações definidas pelo administrador, abas ou pílulas sem itens podem ficar ocultas automaticamente.
+</Info>
 
 ---
 
-## 🔎 Como Encontrar um Atendimento
+## 🔄 Status dos Atendimentos
+
+Os atendimentos utilizam os seguintes status principais na **ZappAssist**:
+
+| Status | O que significa |
+| :-- | :-- |
+| **Aberto** | Atendimento ativo com um responsável atribuído; é o status em que o envio de mensagens ao cliente está liberado |
+| **Pendente** | Atendimento na fila aguardando ser assumido; permite visualização conforme o perfil e só libera envio de mensagens após assumir (ou conforme permissão) |
+| **Fechado** | Atendimento encerrado; fica mantido no histórico para consulta e pode ser reaberto quando permitido |
+
+### Marcadores e Indicadores na Lista
+
+- **Fixado:** conversa presa no topo da lista, podendo ter ordem de prioridade entre os itens fixados;
+- **Arquivado:** conversa movida para a aba **Arquivados** (não altera o status do ticket);
+- **Sem resposta:** conversa **Aberta** em que a última mensagem foi enviada pelo cliente e ainda aguarda resposta da equipe;
+- **Mensagens não lidas:** indicador com a quantidade de mensagens ainda não lidas;
+- **Com robô (chatbot/IA):** sinaliza que um fluxo automatizado, bot ou IA está conduzindo a conversa;
+- **Janela de conversa:** em canais com janela de 24 horas (como API Oficial), um indicador sobre o avatar sinaliza o estado da janela (aberta, próxima do vencimento ou expirada).
+
+### Fluxo de Mudança de Status
+
+- **Pendente → Aberto:** ao assumir o atendimento (**Iniciar Atendimento**);
+- **Aberto → Fechado:** ao encerrar o ticket (**Resolver / Finalizar**);
+- **Fechado → Aberto:** ao reabrir um ticket encerrado (quando permitido);
+- **Aberto → Pendente:** ao devolver o ticket para a fila (**Retornar Ticket para a Fila**).
+
+## 📋 A Lista de Atendimentos em Detalhe
+
+Cada item (card) exibido na lista de conversas traz informações rápidas para facilitar a triagem:
+
+- **Avatar do contato:** foto do perfil no canal (quando disponível), podendo exibir indicador da janela de 24 horas ou status de presença online no WebChat;
+- **Nome do contato e canal:** nome do cliente acompanhado do ícone do canal de origem (e conta de e-mail, quando aplicável);
+- **Horário ou data:** exibe o tempo relativo nas conversas recentes e passa a exibir a **data exata** para atendimentos sem atualização há mais de 7 dias;
+- **Resumo da última mensagem e contador:** prévia da última mensagem trocada e indicador de mensagens não lidas;
+- **Identificador do ticket:** número do protocolo do atendimento (ex.: `#123`);
+- **Fila e indicadores auxiliares:** fila atual (com cor cadastrada ou indicação de _SEM FILA_), além de ícones de carteira, etiquetas, status de resolução, origem do lead e atendimento automatizado/IA;
+- **Responsável e conexão:** nome do atendente atribuído e identificação da conexão/canal (quando visível conforme configuração).
+
+> 📸 **[INSERIR PRINT / IMAGEM 2]**<br />_Descrição do print:_ Card de um atendimento na lista exibindo avatar, fila, número do ticket, responsável e botões de ação rápida.
+
+### Ações Rápidas no Item da Lista
+
+Ao passar o mouse sobre um atendimento na lista, ficam acessíveis ações diretas:
+
+- **Iniciar Atendimento:** assume uma conversa **Pendente** para o seu usuário;
+- **Finalizar Atendimento:** encerra o atendimento (em grupos, restrito a administradores e supervisores);
+- **Menu de opções (`⋮`):**
+  - **Fixar / Desafixar:** mantém o atendimento preso no topo da lista (com opções de **Subir prioridade** ou **Descer prioridade** entre os itens fixados);
+  - **Marcar como não lida:** sinaliza novamente o ticket aberto como não lido para acompanhamento posterior;
+  - **Arquivar / Desarquivar:** move ou retorna o atendimento para a aba **Arquivados** (mediante confirmação; tickets já fechados exigem a ordem adequada conforme a regra do sistema).
+
+<Info>
+  **Fixar, Prioridade e Arquivar:** essas opções organizam a exibição ou o arquivamento da conversa na lista sem alterar diretamente o status operacional (_Aberto_, _Pendente_ ou _Fechado_) do ticket.
+</Info>
+
+---
+
+## 🔍 Como Encontrar um Atendimento
 
 ### Barra de Pesquisa
 
-Alternando o modo de busca no campo superior, você pode localizar conversas por:
+A barra superior permite alternar o modo de busca para localizar conversas rapidamente:
 
-- **Contato:** nome ou número/identificador do cliente;
-- **Mensagens:** palavras ou trechos presentes no conteúdo das mensagens;
-- **Número do Ticket:** identificador específico do atendimento.
+- **Contato:** busca por nome ou telefone/identificador do contato;
+- **Mensagens:** busca por palavras ou expressões no conteúdo das mensagens;
+- **Número do Ticket:** localiza diretamente pelo código do atendimento.
+
+A busca atualiza os resultados conforme você digita e pode ser limpa no botão de limpar do campo.
 
 ### Filtros Avançados
 
-Ao abrir o painel de **Filtros Avançados**, você pode refinar a lista por:
+Ao clicar no ícone de funil, abre-se o painel de **Filtros Avançados** (um indicador visual sinaliza quando há filtros ativos):
 
-- **Ordenação** (ex.: por data de criação), **mensagens não lidas**, **sem resposta** e **somente meus tickets**;
-- **Filas**, **etiquetas**, **usuários**, **canais** e **status** (_Abertos_, _Pendentes_, _Fechados_);
-- **Temperatura do lead** (classificação da IA, como _Muito quente_, _Quente_, _Morno_, _Frio_, _Muito frio_ ou _Sem classificação_) e **Fonte do lead** (ex.: _Meta Ads_, _Link Rastreado_, _Direto_ ou _Sem fonte_).
+| Filtro | O que permite filtrar |
+| :-- | :-- |
+| **Ordenar por data de criação** | Ordena os atendimentos pela data de criação (mantendo os fixados no topo) |
+| **Com mensagens não lidas** | Exibe apenas conversas com mensagens pendentes de leitura |
+| **Sem resposta** | Exibe conversas abertas em que a última mensagem partiu do cliente e aguarda resposta |
+| **Somente meus tickets** | Filtra os atendimentos atribuídos ao seu usuário |
+| **Filas, Etiquetas e Usuários** | Filtra por filas disponíveis, etiquetas aplicadas ao contato ou responsáveis/colaboradores |
+| **Pesquisa Mensagens** | Campo complementar para localizar termos nas mensagens |
+| **Status** | Seleciona quais status (_Abertos_, _Pendentes_, _Fechados_) devem aparecer na lista |
+| **Temperatura do lead** | Filtra pela classificação gerada pela IA (_Muito quente_, _Quente_, _Morno_, _Frio_, _Muito frio_ ou _Sem classificação_) |
+| **Fonte do lead** | Filtra pela origem do contato (_Meta Ads_, _Link Rastreado_, _Direto_ ou _Sem fonte_) |
 
-> 📸 **[INSERIR PRINT / IMAGEM 3]**<br />_Descrição do print:_ Modal de Filtros Avançados exibindo opções de fila, status, etiquetas, temperatura e fonte do lead.
+Administradores e supervisores contam ainda com a opção de **Visualizar Todos Tickets** (ampliando a visão de usuários com status online/offline, canais e todas as filas). As preferências de filtro ficam salvas para suas próximas sessões.
 
-### Ações em Massa (Administradores e Supervisores)
+> 📸 **[INSERIR PRINT / IMAGEM 3]**<br />_Descrição do print:_ Painel de Filtros Avançados aberto com opções de status, fila, etiquetas, temperatura e fonte do lead.
 
-Perfis com permissão podem ativar o modo de **seleção múltipla** no topo da lista para marcar vários tickets e aplicar ações em lote — como alterar status (_Aberto_, _Pendente_, _Fechado_), transferir fila, atribuir ou desatribuir atendente, adicionar/remover etiquetas ou excluir (com confirmação para ações destrutivas).
+### Paginação, Arquivados e Conexões Desconectadas
+
+- **Carregar mais conversas:** role até o final da lista ou utilize o botão **Carregar Mais Tickets** para exibir registros adicionais;
+- **Aba Arquivados:** utilize o campo de busca próprio da aba para localizar atendimentos arquivados;
+- **Alerta de canal desconectado:** quando uma conexão perde o vínculo, um aviso na base da lista sinaliza o canal afetado (conforme a exibição de conexões ativa) até o restabelecimento da conexão.
 
 ---
 
-## 💬 Abrindo e Conversando na Tela de Atendimento
+## ☑️ Ações em Massa (Administradores e Supervisores)
 
-1. Clique no ticket desejado na lista para abrir a conversa no centro e o **Painel do Cliente** à direita;
-2. Se o ticket estiver **Pendente**, clique em **Iniciar Atendimento** para assumi-lo e liberar o envio de mensagens;
-3. Digite no campo inferior: **Enter** envia a mensagem e **Shift + Enter** quebra linha.
+Perfis com permissão de **Administrador** ou **Supervisor** podem aplicar ações em lote em múltiplos atendimentos:
 
-### Recursos na Barra de Mensagens
-
-- **Respostas rápidas (`/`):** digite `/` para buscar e inserir mensagens cadastradas (com opção de filtrar por atalho ou clicar nos chips exibidos);
-- **Formatação de texto:** aplique negrito, itálico, tachado, código ou citação no texto selecionado;
-- **Emojis e assinaturas:** insira emojis pelo seletor e ative/desative sua assinatura automática quando habilitada;
-- **Anexos e áudio:** envie arquivos por seleção, **arrastar e soltar** ou colagem (`Ctrl+V`), e grave áudios com opção de **enviar**, **transcrever** ou **descartar**;
-- **Menu `+` (Mais opções):** acesso a envio de arquivos, **Chave PIX**, **Contato**, **Figurinha**, **Atendimento por chamada** (chamada interna), **Enviar template** (em canais oficiais/compatíveis), **Solicitar permissão para chamada** (WABA) e **Adicionar anotação no ticket** (nota interna visível apenas à equipe).
+1. No topo da lista de atendimentos (fora da aba _Arquivados_), ative o modo de **seleção múltipla**;
+2. Marque os cards desejados (enquanto o modo estiver ativo, clicar no card alterna a seleção em vez de abrir a conversa) ou use **Selecionar todos os carregados** na barra inferior;
+3. Abra o menu de **Ações** na barra inferior e escolha a operação desejada (como alterar status para _Aberto_ ou _Pendente_, _Fechar atendimentos_, _Transferir fila/setor_, _Atribuir_ ou _Desatribuir atendente_, _Adicionar_ ou _Remover etiqueta_ e _Excluir atendimentos_).
 
 <Warning>
-  **Rascunho automático:** caso você troque de conversa enquanto digita algo, o texto em rascunho é preservado temporariamente para evitar perda de digitação.
+  **Confirmação em ações críticas:** operações como **Fechar atendimentos** e **Excluir atendimentos** exigem confirmação prévia, e a exclusão é definitiva. Ao concluir o lote, o sistema informa a quantidade atualizada e eventuais itens ignorados por regra.
 </Warning>
 
-> 📸 **[INSERIR PRINT / IMAGEM 4]**<br />_Descrição do print:_ Barra inferior da conversa exibindo campo de texto, atalhos, gravação de áudio e menu "+ Mais opções".
+## ✉️ Conversando com o Cliente
+
+### Envio de Mensagens e Formatação
+
+- **Envio:** escreva no campo inferior e pressione **Enter** para enviar (ou **Shift + Enter** para quebrar linha). O envio exige que o atendimento esteja com status **Aberto**;
+- **Formatação:** selecione o trecho de texto para usar a barra flutuante ou atalhos de teclado (**Negrito**, _Itálico_, ~~Tachado~~, `Código` e citação), além do seletor de **emojis**;
+- **Assinatura:** utilize o botão de assinatura para incluir ou ocultar automaticamente seu nome no início das mensagens (quando permitido pelo administrador);
+- **Rascunho automático:** textos digitados que não foram enviados ficam salvos temporariamente como rascunho da conversa ao alternar entre tickets.
+
+### Respostas Rápidas, Anexos e Áudio
+
+- **Respostas rápidas (`/`):** digite `/` no campo de mensagem para buscar e aplicar respostas cadastradas (ou clique nas etiquetas/atalhos exibidos quando disponível), respeitando vínculos por fila;
+- **Anexos:** envie arquivos pelo menu **\+**, **arrastando e soltando** na área da conversa ou **colando (`Ctrl+V`)** imagens diretamente, com prévia antes do envio;
+- **Áudio:** clique no botão de microfone para gravar áudio e escolha entre **Enviar**, **Transcrever** (convertendo o áudio em texto para revisar/enviar ou aprimorar com IA, quando configurado) ou **Descartar / Gravar novamente**.
+
+### Menu `+` (Mais Opções) na Barra de Mensagens
+
+| Opção | O que faz | Disponibilidade |
+| :-- | :-- | :-- |
+| **Marcar Usuários / Marcação Fantasma** | Menciona participantes em grupos (com ou sem notificação visível a todos) | Conversas de grupo |
+| **Enviar arquivo** | Abre o seletor de anexos | Maioria dos canais |
+| **Enviar Chave PIX** | Envia dados/chave PIX formatados ao cliente | Canais de WhatsApp compatíveis |
+| **Enviar Contato** | Envia cartão de contato cadastrado | Canais de WhatsApp compatíveis |
+| **Enviar Figurinha** | Abre o seletor de figurinhas/stickers | Canais compatíveis |
+| **Atendimento por chamada** | Inicia chamada de áudio ou vídeo interna e envia o link ao cliente (com gravação automática de áudio) | Canais compatíveis |
+| **Enviar template** | Envia modelo de mensagem aprovado para iniciar/retomar conversa fora da janela de 24h | API Oficial (WABA) |
+| **Solicitar permissão para chamada** | Solicita autorização para ligação conforme regras da API oficial | API Oficial (WABA) |
+| **Adicionar anotação no ticket** | Registra nota interna visível apenas para a equipe | Todos os atendimentos |
+
+### Janela de 24 Horas, Chat Externo, IA (Copiloto) e E-mail
+
+- **Janela de 24 horas (API Oficial):** mensagens livres de texto/áudio/chamada seguem o prazo de 24 horas após a última interação do cliente; após expirar, utilize **templates** aprovados ou o recurso de **chat externo** (quando disponível);
+- **Assistente IA (Copiloto):** permite **Melhorar Texto**, **Perguntar ao Copiloto IA**, **Resumir Conversa com IA** e **Sugerir Resposta com IA**, sujeitos à configuração e ao limite mensal de uso da IA na conta;
+- **Editor de E-mail:** em tickets do canal **E-mail**, o rodapé apresenta campos de e-mail (_Para_, _CC_, _CCO_, _Assunto_), opções de responder/encaminhar e salvamento de rascunho.
+
+> 📸 **[INSERIR PRINT / IMAGEM 4]**<br />_Descrição do print:_ Barra inferior de mensagens exibindo atalhos, gravação de áudio, Assistente IA e menu "+ Mais opções".
+
+---
+
+## 🔧 Ações Dentro da Conversa (Mensagens)
+
+Ao passar o mouse sobre uma mensagem no computador (ou diretamente no celular), é possível utilizar:
+
+- **Responder citando:** responde diretamente a uma mensagem específica em atendimentos **Abertos** (nos canais compatíveis);
+- **Reagir com emoji:** adiciona reações rápidas ou via seletor de emojis em atendimentos **Abertos**;
+- **Menu da mensagem:**
+  - **Fixar / Desafixar:** destaca uma mensagem importante no topo da conversa (em tickets **Abertos**);
+  - **Encaminhar / Marcar (encaminhar várias):** encaminha uma ou múltiplas mensagens para outros contatos (escolhendo canal/fila) ou para colegas/equipes via **Chat Interno**;
+  - **Salvar nos arquivos do contato:** envia o arquivo da mensagem para a pasta de arquivos do contato;
+  - **Download:** baixa arquivos de áudio;
+  - **Editar mensagem:** edita mensagens enviadas nos canais compatíveis;
+  - **Deletar:** remove a mensagem para todos (quando suportado) ou apenas para o seu usuário (com confirmação);
+  - **Abrir Ticket Privado:** em grupos, abre um atendimento individual com o autor da mensagem.
+
+### Marcadores, Indicadores e Busca na Conversa
+
+- **Marcador de não lidas e status de entrega:** indica o ponto de mensagens novas e o estado de envio/entrega/leitura das mensagens enviadas, além de indicadores de origem/dispositivo, respostas de status/comentários, mídias (incluindo agrupamento em pacote de download quando habilitado), localizações, anotações internas e mensagens agendadas;
+- **Pesquisar na conversa:** em **Mais ações (`⋮`) → Pesquisar...** no cabeçalho, digite ao menos 3 caracteres para localizar termos no histórico do ticket e navegar entre as ocorrências.
+
+> 📸 **[INSERIR PRINT / IMAGEM 5]**<br />_Descrição do print:_ Opções de ação em uma mensagem exibindo Responder, Reagir, Fixar, Encaminhar, Editar e Deletar.
+
+---
+
+## ⚡ Ações do Atendimento (Cabeçalho da Conversa)
+
+O cabeçalho exibe foto, nome do contato, responsável atual, número do ticket, indicadores adicionais (como temperatura do lead pela IA, origem em anúncio e colaboradores) e os botões de ação (reunidos em um menu no celular):
+
+- **Finalizar / Resolver (`✓`):** encerra o ticket (status **Fechado**), podendo solicitar mensagem de despedida, motivo de encerramento e disparar avaliação conforme configurado. Em grupos, restrito a administradores e supervisores;
+- **Retornar Ticket para a Fila (`↩`):** devolve o ticket para **Pendente** na fila para que outro atendente assuma;
+- **Reabrir Ticket (`↻`):** reabre um ticket **Fechado** para **Aberto** (em **Mais ações (`⋮`)** no desktop ou no cabeçalho no celular), conforme permissão e regras de prazo para tickets antigos;
+- **Transferir (`⇢`):** transfere o ticket para uma **fila** (obrigatória) e opcionalmente para um **atendente** daquela fila;
+- **Transferir ChatBot (`🤖`):** envia o atendimento de volta para um fluxo de **Chatbot** (quando aplicável);
+- **Colaboradores (`👥`):** adiciona colegas como participantes em atendimentos individuais **Abertos** (com convite via **Chat Interno**), quando habilitado;
+- **Agendamento de mensagem (`🕐`):** programa o envio automático de mensagens para data e hora futuras (exibidas na aba **Atividade** do painel do cliente);
+- **Chamadas (`📞`):** inicia chamadas pelos recursos habilitados na conta (como discador/telefonia ou chamada interna via link);
+- **Lançar Pedido / Pesquisar...:** integrações ativas de pedido e busca interna de mensagens no ticket.
+
+> 📸 **[INSERIR PRINT / IMAGEM 6]**<br />_Descrição do print:_ Cabeçalho da conversa exibindo dados do ticket, responsáveis e botões de ação.
+
+---
+
+## 👤 Informações do Cliente (Painel do Cliente)
+
+O **Painel do Cliente** à direita reúne os dados do contato e abre automaticamente ao selecionar um ticket (podendo ser ocultado/exibido ao clicar no nome do contato no cabeçalho).
+
+### Cabeçalho do Painel
+
+Exibe foto, nome e telefone do contato, além dos atalhos:
+
+- **Editar:** atualiza dados cadastrais do contato;
+- **Arquivos:** acessa os arquivos salvos do cliente;
+- **Central de mídias:** visualiza imagens, vídeos e áudios trocados na conversa;
+- **Mais ações (`⋮`):**
+  - **Desativar bot deste atendimento:** encerra o atendimento automatizado no ticket e o deixa **Pendente** para atendimento humano;
+  - **Sincronizar Mensagens:** importa mensagens recentes nos canais de WhatsApp compatíveis;
+  - **Exibir Chat Completo:** consulta o histórico consolidado de conversas do contato;
+  - **Baixar PDF mensagens ticket ativo:** gera um PDF com o histórico do ticket atual;
+  - **Logs:** exibe a linha do tempo de eventos do ticket (assunção, transferência, colaboradores, menções em anotações);
+  - **Deletar Ticket:** exclui permanentemente o atendimento (disponível para administradores e supervisores, mediante confirmação).
+
+## ➕ Criar um Novo Atendimento e Contatos
+
+- **Novo Ticket (`+`):** ao lado dos filtros, abre a janela de criação de atendimento permitindo escolher o **tipo de canal**, localizar um contato existente ou informar **telefone** (com DDI) / **e-mail**, selecionar o **canal** disponível e a **fila** de destino. Caso já exista atendimento ou o ticket esteja atribuído/bloqueado, o sistema exibe as opções correspondentes;
+- **Contatos:** abre o gerenciamento de contatos da empresa (respeitando eventuais restrições de acesso configuradas pelo administrador).
+
+---
+
+## 🔐 Permissões por Perfil na Tela de Atendimento
+
+O acesso a determinados filtros, ações e visualizações varia conforme o perfil do usuário (**Administrador**, **Supervisor**, **Supervisor de Fila** ou **Atendente**) e as regras definidas na conta:
+
+| Recurso / Ação | Admin | Supervisor | Supervisor de Fila | Atendente |
+| :-- | :-: | :-: | :-: | :-: |
+| Visualizar todos os tickets / filtrar por todos os canais e usuários | Sim | Sim | — | — |
+| Gerenciar conversas de grupo (finalizar, retornar, transferir) | Sim | Sim | Sim | — |
+| Reabrir ticket fechado | Sim | Conforme regra | — | Conforme regra |
+| Excluir ticket / apagar mensagens de outros usuários | Sim | Sim | — | — |
+| Ver logs do ticket | Sim | Sim | Sim | Sim |
+| Excluir anotações internas | Sim | Sim | — | — |
+| Ver número mascarado quando ocultação estiver ativa | Sim | Sim | — | Oculto |
+| Ler tickets pendentes sem assumir | Sim | Sim | — | Conforme regra |
+
+---
+
+## 📱 Diferenças por Canal e Configurações da Tela
+
+### Variações por Canal
+
+Nem todos os recursos de mensagem e anexo se comportam da mesma forma em todos os canais:
+
+- **WhatsApp (conexões e API Oficial):** suporte a respostas citadas, reações, encaminhamento, fixação, figurinhas/contatos/PIX (conforme modalidade), agendamento de mensagens, templates e janela de 24 horas (em API oficial);
+- **Telegram / Redes Sociais (Instagram, Facebook, TikTok):** suporte conforme recursos nativos da plataforma (como resposta a comentários/mensagens e janela de interação quando aplicável);
+- **WebChat:** inclui indicadores de presença do visitante e integração com sessões/chat do site;
+- **E-mail:** utiliza editor próprio de e-mail (_Para_, _CC_, _CCO_, _Assunto_, anexos e rascunhos) no histórico do ticket;
+- **Anexos:** respeitam os limites de tamanho e tipos de arquivo de cada canal/provedor.
+
+### Configurações Que Alteram a Tela
+
+Administradores podem ativar ou desativar opções na configuração de atendimento que ajustam a interface para a equipe — como ocultar abas vazias, separar atendimentos de chatbot, exibir conexões desconectadas, ocultar número do contato, habilitar colaboradores, permitir assumir tickets bloqueados, agrupar mídias em pacote de download e exibir marcador de mensagens não lidas.
+
+---
+
+## ❓ Solução Rápida para Dúvidas Comuns
+
+- **Não encontro um atendimento na lista:** verifique a aba/pílula de status (_Abertos_, _Pendentes_, _Fechados_ ou _Arquivados_), limpe filtros ativos, confira se a opção de visualizar todos os tickets está ligada ou pesquise pelo **número do ticket**.
+- **Não consigo enviar mensagem:** confirme se o ticket está **Aberto** (em _Pendentes_, clique em **Iniciar Atendimento**; em _Fechados_, reabra se permitido) e, em canais de API Oficial, verifique se a **janela de 24 horas** não expirou (utilizando template ou chat externo quando aplicável).
+- **Anexo recusado ou opção indisponível:** verifique os limites de tamanho/formato do canal, as permissões do seu perfil e as configurações ativas na conta.
 
 ---
 
 ## 💬 Suporte Oficial ZappAssist
 
-Tem dúvidas sobre a tela de Atendimento, filtros ou permissões da sua equipe na ZappAssist? Fale com a nossa equipe:
+Precisa de ajuda com a tela de Atendimento, permissões da equipe ou configurações de canais na ZappAssist? Fale com a nossa equipe:
 
 - **WhatsApp de Suporte:** [(35) 99121-7758](https://wa.me/5535991217758)
 - **E-mail:** [suporte@zappassist.com.br](mailto:suporte@zappassist.com.br)
